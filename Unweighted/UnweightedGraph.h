@@ -8,7 +8,6 @@
 #include <list>
 #include <iomanip>
 
-
 class UnweightedGraph {
     private:
     std::vector<std::vector<int>> adjList;
@@ -58,7 +57,7 @@ class UnweightedGraph {
     void topSortHelper(int src, std::vector<bool>& visited, std::list<int>& res) const;
     void fillOrder(int src, std::vector<bool>& visited, std::stack<int>& stack) const;
     void TarjanHelper(int src, std::vector<int>& ids, std::vector<int>& lowlink, std::stack<int>& st, std::vector<bool>& onStack, std::vector<std::vector<int>>& SCCs) const;
-
+    
 };
 
 #include "UnweightedGraph.hpp"

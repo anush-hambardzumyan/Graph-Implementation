@@ -545,8 +545,8 @@ std::list<int> UnweightedGraph::KahnsAlgorithm() const
         }
     } 
     if (result.size() != adjList.size()) {
-            return {}; //cycled graph
-        }
+        return {}; //cycled graph
+    }
     return result;
 }
 
